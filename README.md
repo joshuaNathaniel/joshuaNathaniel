@@ -22,8 +22,6 @@ I'm a cofounder of [NimbusXR](https://nimbusxr.us), where we build AI and extend
   </tr>
 </table>
 
-Also a contributor to [kafka-ui](https://github.com/kafbat/kafka-ui).
-
 <br>
 
 <picture>
