@@ -22,9 +22,7 @@ I'm a cofounder of [NimbusXR](https://nimbusxr.us), where we build AI and extend
   </tr>
 </table>
 
-### Upstream
-
-[kafbat/kafka-ui](https://github.com/kafbat/kafka-ui), the open-source web UI for Apache Kafka: [OAuth2 proxy support](https://github.com/kafbat/kafka-ui/pull/1540), [connector-level permissions for Kafka Connect](https://github.com/kafbat/kafka-ui/pull/1541), and [publishing through Schema Registry with any subject strategy](https://github.com/kafbat/kafka-ui/pull/1650).
+Also a contributor to [kafka-ui](https://github.com/kafbat/kafka-ui).
 
 <br>
 
