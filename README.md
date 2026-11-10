@@ -20,18 +20,6 @@ I'm a cofounder of [NimbusXR](https://nimbusxr.us), where we build AI and extend
       <a href="https://stormbreaker.nimbusxr.us">stormbreaker.nimbusxr.us</a>
     </td>
   </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/nimbusxr/custos"><b>CUST/OS</b></a> <sub>Lua</sub><br><br>
-      On-device AI plugin for ATAK: voice commands, local models, Lua skills your team can edit, and operator controls over what the agent may do.<br><br>
-      <a href="https://custos.nimbusxr.us">custos.nimbusxr.us</a>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/nimbusxr/webhook-actions-docs"><b>Webhook Actions</b></a> <sub>GitHub App</sub><br><br>
-      Turns organization webhook events into repository dispatches across your repos, with no personal access tokens to manage.<br><br>
-      <a href="https://github.com/marketplace/webhook-actions">GitHub Marketplace</a>
-    </td>
-  </tr>
 </table>
 
 ### Upstream
