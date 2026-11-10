@@ -38,12 +38,6 @@ I'm a cofounder of [NimbusXR](https://nimbusxr.us), where we build AI and extend
 
 [kafbat/kafka-ui](https://github.com/kafbat/kafka-ui), the open-source web UI for Apache Kafka: [OAuth2 proxy support](https://github.com/kafbat/kafka-ui/pull/1540), [connector-level permissions for Kafka Connect](https://github.com/kafbat/kafka-ui/pull/1541), and [publishing through Schema Registry with any subject strategy](https://github.com/kafbat/kafka-ui/pull/1650).
 
-### Earlier tools
-
-- [gh-project-manager](https://github.com/joshuaNathaniel/gh-project-manager): GitHub CLI extension for running GitHub Projects from the terminal
-- [eslint-plugin-graphql-schema](https://github.com/joshuaNathaniel/eslint-plugin-graphql-schema): lint rules for GraphQL schema definitions
-- [stubmock](https://github.com/stubmock/stubmock): a kit for mocking REST and federated GraphQL APIs
-
 <br>
 
 <picture>
