@@ -1,0 +1,49 @@
+name: Stats
+
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/stats.yml
+      - .github/scripts/render-stats.mjs
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: stats
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Render stats cards
+        run: node .github/scripts/render-stats.mjs dist
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      # The cards live on their own branch so daily refreshes stay out of main's history.
+      - name: Publish to the output branch
+        working-directory: dist
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git init -q -b output
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -qm 'Update stats cards'
+          git push -qf "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
+
+      # GitHub disables scheduled workflows after 60 days without repository activity.
+      - name: Keep the schedule alive
+        run: gh api -X PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/stats.yml/enable"
+        env:
+          GH_TOKEN: ${{ github.token }}
