@@ -3,8 +3,6 @@
   <img src="assets/hero-light.svg" width="100%" alt="A terminal running an acceptance test named after Joshua Nathaniel Miller, Principal Engineer and Cofounder of NimbusXR in Des Moines, Iowa. Scenario: let agents build it, prove that it works. All three steps pass.">
 </picture>
 
-I'm a cofounder of [NimbusXR](https://nimbusxr.us), where we build AI and extended reality software for commercial and federal customers. Most of my time goes to one question: how do you know software works when an agent wrote it?
-
 ### Building
 
 <table>
